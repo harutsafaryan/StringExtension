@@ -113,6 +113,11 @@
             return letters[index];
         }
 
+        /// <summary>
+        /// Return string without spaces
+        /// </summary>
+        /// <param name="source">Given string</param>
+        /// <returns>String without spaces</returns>
         public static string _RemoveSpaces(this string source)
         {
             string result = "";

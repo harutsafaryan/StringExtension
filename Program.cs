@@ -6,13 +6,12 @@ namespace Extension
     {
         static void Main(string[] args)
         {
-            string str = "Hello world";
-            int s = str._SpaceCount();
+            Console.Write("Please input any string: ");
+            string str = Console.ReadLine();
 
-            bool b = str._IsContainWord("world");
-            char c = str._LetterWithMaxCount();
-            string sss = str._RemoveSpaces();
-            Console.WriteLine(sss); 
+            Console.WriteLine($"Space count is: {str._SpaceCount()}");
+            Console.WriteLine($"String withot spaces: {str._RemoveSpaces()}");
+            Console.WriteLine($"Max letter in the string is: {str._LetterWithMaxCount()}");
         }
     }
 }
